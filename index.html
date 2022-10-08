@@ -1,129 +1,641 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehariw amlake - Web Developer </title>
 
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="google" content="notranslate">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-
-	<title>Portfolio website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-	<!----hero Section start---->
 
-	<div class="hero">
-		<nav>
-			<h2 class="logo">mehariw<span>amlake</span></h2>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-			<a href="#" class="btn">Subscribe</a>
-		</nav>
+<body id="top">
 
-		<div class="content">
-			<h4>  <img src="https://slackmojis.com/emojis/5197-party_blob/download" width="30"/> Hello, my name is</h4>
-			<h1>mehariw <span>amlake</span></h1>
-			<h3>I am a Full stuck Web Developer.</h3>
-			<div class="newslatter">
-				<form>
-					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
-					<input type="submit" name="submit" value="Lets Start">
-				</form>
-			</div>
-		</div>
-	</div>
+  <!-- 
+    - #HEADER
+  -->
 
-	<!----About section start---->
-	<section class="about">
-		<div class="main">
-			<img src="img/main-img.png">
-			<div class="about-text">
-				<h2>About Me</h2>
-				<h5>Developer <span>& Designer</span></h5>
-				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
-				<button type="button">Let's Talk</button>
-			</div>
-		</div>
-	</section>
+  <header class="header" data-header>
+    <div class="container">
 
-	<!-----service section start----------->
-	<div class="service">
-		<div class="title">
-			<h2>Our Services</h2>
-		</div>
+      <a href="#">
+        <h1 class="logo">Mehariw amlake</h1>
+      </a>
 
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
+      <nav class="navbar container">
+        <ul class="navbar-list">
 
-			<div class="card">
-				<i class="far fa-user"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
 
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
 
-	<!------Contact Me------>
-	<div class="contact-me">
-		<p>Let Me Get You A Beautiful Website.</p>
-		<a class="button-two" href="#">Hire Me</a>
-	</div>
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
 
-	<!------footer start--------->
-	<footer>
-		<p>mehariw amlake</p>
-		<p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
-		<div class="social">
-			<a href="#"><i class="fab fa-linkedin-in"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-github"></i></a>
-			<a href="#"><i class="fab fa-twitter"></i></a>
-		</div>
-		<p class="end">Copyright&copy; 2022 All Rights Reserved.</p>
-	</footer>
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="https://docs.google.com/document/d/1H1WrD9XzEB_7gV_4pVCaF9GG8QcE9MPkKX-m-3yckP4/edit?usp=sharing" class="btn btn-primary">Download CV</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/5x5.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">2</p>
+
+              <p class="elem-text">Years of Success</p>
+            </div>
+
+            <div class="elem elem-2">
+              <p class="elem-title">80+</p>
+
+              <p class="elem-text">Projects Completed</p>
+            </div>
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+
+            <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from New York"
+              class="rotate-img">
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Mehariw amlake</strong> Web Developer 
+            </h2>
+
+            <p class="hero-text">
+              Code is like humor. When you have to explain it, it’s bad.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
+              class="abs-img">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-angular"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">I'm a Developer</p>
+
+            <h2 class="h2 section-title">I Develop Application that Help People</h2>
+
+            <p class="section-text">
+              Simplicity is the soul of efficiency
+              Make it work, make it right, make it fast.
+            </p>
+
+            <p class="section-text">
+              those are my rules!
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Portfolio</p>
+
+          <h2 class="h2 section-title">My Amazing Works</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Airbnb_clone</p>
+
+                  <h3 class="h3 card-title">Full functional Web Application</h3>
+
+                  
+                  <span class="btn-link">
+                  <span onclick="window.location.href='https://github.com/Mehariwamlake/AirBnB_clone_v2'">View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Vimeo</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Soundcloud</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Details</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="skills-list">
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 95%">
+                <h3 class=" skills-title">CSS</h3>
+
+                <data class="skills-data" value="95">95%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 95%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">React</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 90%">
+                <h3 class="skills-title">flask</h3>
+
+                <data class="skills-data" value="90">90%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 70%">
+                <h3 class="skills-title">Python</h3>
+
+                <data class="skills-data" value="70">70%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">C</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">JavaScript</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Don't be shy</p>
+
+            <h2 class="h2 section-title">Drop Me a Line</h2>
+
+            <div class="wrapper">
+
+              <form action="" class="contact-form" onsubmit="sendEmail(); reset(); return false;">
+
+                <input type="text" name="name" placeholder="Name" required class="contact-input">
+
+                <input type="email" name="email" placeholder="Email" required class="contact-input">
+
+                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+
+                <button type="submit" class="btn-submit">Submit Message</button>
+
+              </form>
+
+              <ul class="contact-list">
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Address</h3>
+
+                    <address class="contact-item-link">
+                      Addis ababa, Ethiopia
+                    </address>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="mail"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Email</h3>
+
+                    <a href="mehariwamlake@gmail.com" class="contact-item-link">mehariwamlake@gmail.com</a>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="call"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Phone</h3>
+
+                    <a href="tel:+251936977299" class="contact-item-link">+251936977299</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendEmail(){
+                      Email.send({
+                Host : "smtp.gmail.com",
+                Username : "mehariwamlake@gmail.com",
+                Password : "2DD492935DB6176DB3261795814FAB5B7511",
+                To : 'mehariwamlake@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+        }
+      </script>
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Latest News</p>
+
+          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Web Development</a>
+
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Web Development</a>
+
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Web Development</a>
+
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reseverd
+      </p>
+
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">Terms & Condition</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
