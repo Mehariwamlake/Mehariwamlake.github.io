@@ -415,7 +415,7 @@ body {
 
 .portfolio-card .card-subtitle {
   color: var(--orange-soda);
-  margin-block-end: 5px;
+  margin-block-end: 7px;
 }
 
 .portfolio-card .card-title {
@@ -429,6 +429,7 @@ body {
   gap: 5px;
   font-size: var(--fs-6);
   text-transform: uppercase;
+  color:hsl(50, 100%, 54%)
 }
 
 .portfolio-card .btn-link ion-icon {
